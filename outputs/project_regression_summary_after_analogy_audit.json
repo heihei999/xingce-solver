@@ -1,0 +1,72 @@
+{
+  "head": "73e5595",
+  "date": "2026-06-15",
+  "modules": {
+    "data_analysis": {
+      "integrated": true,
+      "frozen": true,
+      "correct": null,
+      "wrong": null,
+      "null": null,
+      "note": "v5 stable, frozen"
+    },
+    "argument_reasoning": {
+      "integrated": true,
+      "correct": 18,
+      "wrong": 0,
+      "null": 2,
+      "total": 20
+    },
+    "translation_reasoning": {
+      "integrated": true,
+      "correct": 16,
+      "wrong": 0,
+      "null": 0,
+      "total": 16
+    },
+    "truth_reasoning": {
+      "integrated": true,
+      "correct": 4,
+      "wrong": 0,
+      "null": 8,
+      "total": 12
+    },
+    "analysis_reasoning": {
+      "integrated": true,
+      "correct": 2,
+      "wrong": 0,
+      "null": 10,
+      "total": 12
+    },
+    "definition_judgement": {
+      "integrated": false,
+      "correct": 0,
+      "wrong": 0,
+      "null": 12,
+      "total": 12,
+      "pause_reason": "requires semantic understanding, pure rules cannot advance"
+    },
+    "analogy_reasoning_v1": {
+      "integrated": false,
+      "correct": 2,
+      "wrong": 0,
+      "null": 10,
+      "total": 12,
+      "pause_reason": "limited coverage with pure rules"
+    },
+    "analogy_reasoning_strong_v2": {
+      "integrated": false,
+      "correct": 0,
+      "wrong": 0,
+      "null": 12,
+      "total": 12,
+      "pause_reason": "three-word stems and semantic relations not covered by core"
+    }
+  },
+  "protection": {
+    "data_analysis_py": "no diff",
+    "logic_reasoning_py": "no diff",
+    "all_cards_jsonl": "no diff"
+  },
+  "recommendation": "Do not integrate definition_judgement or analogy_reasoning yet. Consider truth_reasoning v7.2 refinement or argument/translation regression expansion."
+}

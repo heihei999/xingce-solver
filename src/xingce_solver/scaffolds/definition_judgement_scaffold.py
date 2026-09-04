@@ -109,7 +109,12 @@ def build_definition_judgement_scaffold() -> dict[str, Any]:
                 "必要条件与附加描述无法区分 → analysis_only",
             ],
         },
+                "formatting_guidelines": [
+            "允许自然使用 Emoji，但绝对不得滥用导致满篇都是表情包。",
+            "强烈鼓励在进行多项对比、不同方法分析时，使用 Markdown 对比表格，直观清晰！"
+        ],
         "must_not_do": [
+        "绝对不得在回复用户的追问、反驳或要求详细讲解时，使用【题型识别】等脚手架八股文模板。追问时必须直接使用自然语言对话，并可自由画字符图（Ascii Art）辅助解释！",
             "不得只按关键词重合判断。",
             "不得忽略选是/选非。",
             "不得把例子当定义。",

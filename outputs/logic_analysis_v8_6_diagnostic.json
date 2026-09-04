@@ -1,0 +1,14 @@
+[
+  {"case_id": "LANALYSIS-REAL-001", "expected": "D", "status": "ambiguous", "option_status": "ambiguous_options", "predicted": null, "failure_stage": "option_mapping"},
+  {"case_id": "LANALYSIS-REAL-002", "expected": "C", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "constraint_parse"},
+  {"case_id": "LANALYSIS-REAL-003", "expected": "D", "status": "analysis_only", "option_status": "not_attempted", "predicted": null, "failure_stage": "entity_domain_extract"},
+  {"case_id": "LANALYSIS-REAL-004", "expected": "C", "status": "solved", "option_status": "unique_supported", "predicted": "C", "failure_stage": "none"},
+  {"case_id": "LANALYSIS-REAL-005", "expected": "C", "status": "solved", "option_status": "unique_supported", "predicted": "C", "failure_stage": "none"},
+  {"case_id": "LANALYSIS-REAL-006", "expected": "D", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "constraint_parse"},
+  {"case_id": "LANALYSIS-REAL-007", "expected": "C", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "constraint_parse"},
+  {"case_id": "LANALYSIS-REAL-008", "expected": "B", "status": "analysis_only", "option_status": "not_attempted", "predicted": null, "failure_stage": "entity_domain_extract"},
+  {"case_id": "LANALYSIS-REAL-009", "expected": "D", "status": "analysis_only", "option_status": "not_attempted", "predicted": null, "failure_stage": "entity_domain_extract"},
+  {"case_id": "LANALYSIS-REAL-010", "expected": "A", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "option_mapping"},
+  {"case_id": "LANALYSIS-REAL-011", "expected": "B", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "constraint_parse"},
+  {"case_id": "LANALYSIS-REAL-012", "expected": "D", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "constraint_parse"}
+]

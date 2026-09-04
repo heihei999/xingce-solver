@@ -1,0 +1,78 @@
+{
+  "baseline": {
+    "head": "6593690",
+    "commit_message": "update MCP guidance smoke for quantity relation"
+  },
+  "test_results": {
+    "mcp_guidance_tests": "34 passed",
+    "quantity_scaffold_tests": "22 passed",
+    "graphic_scaffold_tests": "23 passed",
+    "judgement_scaffold_tests": "48 passed",
+    "full_pytest": "342 passed"
+  },
+  "mcp_guidance_tools_status": {
+    "get_graphic_reasoning_scaffold": "complete",
+    "get_definition_judgement_scaffold": "complete",
+    "get_analogy_reasoning_scaffold": "complete",
+    "get_logic_analysis_scaffold": "complete",
+    "get_quantity_relation_scaffold": "complete"
+  },
+  "quantity_relation_mcp_guidance_contract": {
+    "source": "build_quantity_relation_scaffold",
+    "read_only": true,
+    "question_input": false,
+    "option_input": false,
+    "image_input": false,
+    "returns_answer": false,
+    "returns_selected_option": false,
+    "returns_prediction": false,
+    "solver_call": false,
+    "automatic_answer_selection": false,
+    "cli_integration": false
+  },
+  "architecture": {
+    "solver_track": [
+      "solve_data_analysis",
+      "solve_logic_reasoning.translation",
+      "solve_logic_reasoning.argument_reasoning",
+      "solve_logic_reasoning.truth_reasoning_guarded",
+      "solve_logic_reasoning.logic_analysis_guarded"
+    ],
+    "scaffold_track": [
+      "graphic_reasoning_scaffold",
+      "definition_judgement_scaffold",
+      "analogy_reasoning_scaffold",
+      "logic_analysis_scaffold",
+      "quantity_relation_scaffold"
+    ],
+    "mcp_guidance_preview_track": [
+      "get_graphic_reasoning_scaffold",
+      "get_definition_judgement_scaffold",
+      "get_analogy_reasoning_scaffold",
+      "get_logic_analysis_scaffold",
+      "get_quantity_relation_scaffold"
+    ]
+  },
+  "protected_files": {
+    "cli_py": "unchanged",
+    "data_analysis_py": "unchanged",
+    "logic_reasoning_py": "unchanged",
+    "graphic_reasoning_scaffold_py": "unchanged",
+    "definition_judgement_scaffold_py": "unchanged",
+    "analogy_reasoning_scaffold_py": "unchanged",
+    "logic_analysis_scaffold_py": "unchanged",
+    "quantity_relation_scaffold_py": "unchanged",
+    "all_cards_jsonl": "unchanged"
+  },
+  "forbidden_dependencies_added": false,
+  "external_llm_api_used": false,
+  "network_used": false,
+  "fabricated_questions": false,
+  "untracked_local_test_dirs": [
+    "text-image/analogy_reasoning_real_cases_open_verified_v1/",
+    "text-image/analogy_reasoning_strong_relations_open_verified_v2/",
+    "text-image/definition_judgement_real_cases_open_verified_v1/",
+    "text-image/logic_analysis_real_cases_open_verified_v1/"
+  ],
+  "status": "passed"
+}

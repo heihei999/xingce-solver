@@ -1,0 +1,14 @@
+[
+  {"case_id": "dj_open_v1_001", "expected": "B", "status": "ambiguous", "polarity": "positive", "failure_stage": "option_assessment", "reason": "Definition-option vocabulary mismatch; keyword score 0.00"},
+  {"case_id": "dj_open_v1_002", "expected": "B", "status": "ambiguous", "polarity": "positive", "failure_stage": "option_assessment", "reason": "Same vocabulary mismatch issue"},
+  {"case_id": "dj_open_v1_003", "expected": "C", "status": "ambiguous", "polarity": "positive", "failure_stage": "option_assessment", "reason": "Same vocabulary mismatch issue"},
+  {"case_id": "dj_open_v1_004", "expected": "B", "status": "ambiguous", "polarity": "negative", "failure_stage": "option_assessment", "reason": "All options score 0; no clear violation"},
+  {"case_id": "dj_open_v1_005", "expected": "D", "status": "ambiguous", "polarity": "positive", "failure_stage": "option_assessment", "reason": "Multi-definition; elements are keyword fragments"},
+  {"case_id": "dj_open_v1_006", "expected": "B", "status": "analysis_only", "polarity": "negative", "failure_stage": "definition_parse", "reason": "Definition term parsed as '本质就'"},
+  {"case_id": "dj_open_v1_007", "expected": "D", "status": "ambiguous", "polarity": "negative", "failure_stage": "option_assessment", "reason": "All options unknown; no clear violation"},
+  {"case_id": "dj_open_v1_008", "expected": "A", "status": "ambiguous", "polarity": "positive", "failure_stage": "option_assessment", "reason": "Classification match; polarity detection OK but options not assessed"},
+  {"case_id": "dj_open_v1_009", "expected": "C", "status": "ambiguous", "polarity": "positive", "failure_stage": "option_assessment", "reason": "Keywords don't match option text"},
+  {"case_id": "dj_open_v1_010", "expected": "B", "status": "analysis_only", "polarity": "unknown", "failure_stage": "question_polarity", "reason": "Polarity detection failed for '使用了联合式构词法的是'"},
+  {"case_id": "dj_open_v1_011", "expected": "D", "status": "ambiguous", "polarity": "positive", "failure_stage": "option_assessment", "reason": "Definition parsed via ':' format but keywords don't match options"},
+  {"case_id": "dj_open_v1_012", "expected": "B", "status": "ambiguous", "polarity": "positive", "failure_stage": "option_assessment", "reason": "Keywords don't match option text"}
+]

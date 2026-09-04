@@ -643,12 +643,12 @@ def _route_xingce_question_core(
     if module_guess in _SCAFFOLD_TOOLS:
         recommended_track = "scaffold_guidance"
         recommended_tool = _SCAFFOLD_TOOLS[module_guess]
-    elif module_guess in ("data_analysis", "logic_reasoning"):
+    elif module_guess == "data_analysis":
         recommended_track = "solver_candidate"
-        recommended_tool = None
-        warnings.append(
-            f"route only; solver not called in MCP route tool for {module_guess}"
-        )
+        recommended_tool = "solve_data_analysis"
+    elif module_guess == "logic_reasoning":
+        recommended_track = "solver_candidate"
+        recommended_tool = "solve_logic_reasoning"
     elif module_guess == "unknown":
         recommended_track = "route_uncertain"
         recommended_tool = None

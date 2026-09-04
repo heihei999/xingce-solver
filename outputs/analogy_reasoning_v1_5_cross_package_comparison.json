@@ -1,0 +1,24 @@
+{
+  "version": "v1_5",
+  "package_1": "analogy_reasoning_real_cases_open_verified_v1",
+  "package_2": "analogy_reasoning_strong_relations_open_verified_v2",
+  "package_1_results": {"total": 12, "correct": 2, "wrong": 0, "solved": 2, "ambiguous": 5, "analysis_only": 5},
+  "package_2_results": {"total": 12, "correct": 0, "wrong": 0, "solved": 0, "ambiguous": 4, "analysis_only": 8},
+  "comparison": {
+    "correct_change": -2,
+    "wrong_change": 0,
+    "solved_change": -2,
+    "analysis_only_change": 3,
+    "observation": "Strong-relation package has more three-word stems and semantic relations that the current core cannot detect. The solver's SAFE_RELATION_TYPES (material_product, naming_convention, etc.) don't cover tool-function, species-genus, necessary-attribute, or action-compound patterns."
+  },
+  "relation_type_coverage": {
+    "detected_in_package_2": ["unknown", "grammar_structure", "degree", "same_category", "material_product", "sequence", "whole_part"],
+    "needed_for_package_2": ["tool_function", "profession_object", "species_genus", "cause_effect", "action_compound", "necessary_attribute", "state_progression", "attribute_modifier"],
+    "gap": "Current core lacks tool-function-profession chain, species-genus sub-type, necessary-attribute, and action-compound relation detectors"
+  },
+  "integration_gate": {
+    "threshold": "correct >= 4 AND wrong = 0",
+    "achieved": false,
+    "reason": "correct = 0; core relation detection does not cover the strong-relation patterns in this package"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "baseline": {
+    "head": "36b40ef",
+    "commit_message": "add MCP guidance tools preview"
+  },
+  "test_results": {
+    "mcp_guidance_tests": "28 passed",
+    "graphic_scaffold_tests": "23 passed",
+    "judgement_scaffold_tests": "48 passed",
+    "full_pytest": "314 passed"
+  },
+  "mcp_guidance_tools_status": {
+    "get_graphic_reasoning_scaffold": {
+      "status": "complete",
+      "source": "build_graphic_reasoning_scaffold",
+      "read_only": true,
+      "solver_call": false
+    },
+    "get_definition_judgement_scaffold": {
+      "status": "complete",
+      "source": "build_definition_judgement_scaffold",
+      "read_only": true,
+      "solver_call": false
+    },
+    "get_analogy_reasoning_scaffold": {
+      "status": "complete",
+      "source": "build_analogy_reasoning_scaffold",
+      "read_only": true,
+      "solver_call": false
+    },
+    "get_logic_analysis_scaffold": {
+      "status": "complete",
+      "source": "build_logic_analysis_scaffold",
+      "read_only": true,
+      "solver_call": false
+    }
+  },
+  "contract": {
+    "question_input": false,
+    "option_input": false,
+    "image_input": false,
+    "returns_answer": false,
+    "returns_selected_option": false,
+    "returns_prediction": false,
+    "automatic_answer_selection": false,
+    "cli_integration": false
+  },
+  "architecture": {
+    "solver_track": [
+      "solve_data_analysis",
+      "solve_logic_reasoning.translation",
+      "solve_logic_reasoning.argument_reasoning",
+      "solve_logic_reasoning.truth_reasoning_guarded",
+      "solve_logic_reasoning.logic_analysis_guarded"
+    ],
+    "scaffold_track": [
+      "graphic_reasoning_scaffold",
+      "definition_judgement_scaffold",
+      "analogy_reasoning_scaffold",
+      "logic_analysis_scaffold"
+    ],
+    "mcp_guidance_preview_track": [
+      "get_graphic_reasoning_scaffold",
+      "get_definition_judgement_scaffold",
+      "get_analogy_reasoning_scaffold",
+      "get_logic_analysis_scaffold"
+    ]
+  },
+  "protected_files": {
+    "data_analysis_py": "unchanged",
+    "logic_reasoning_py": "unchanged",
+    "definition_judgement_py": "unchanged",
+    "analogy_reasoning_py": "unchanged",
+    "logic_analysis_reasoning_py": "unchanged",
+    "graphic_reasoning_scaffold_py": "unchanged",
+    "definition_judgement_scaffold_py": "unchanged",
+    "analogy_reasoning_scaffold_py": "unchanged",
+    "logic_analysis_scaffold_py": "unchanged",
+    "all_cards_jsonl": "unchanged",
+    "cli_py": "unchanged"
+  },
+  "forbidden_dependencies_added": false,
+  "untracked_local_test_dirs": [
+    "text-image/analogy_reasoning_real_cases_open_verified_v1/",
+    "text-image/analogy_reasoning_strong_relations_open_verified_v2/",
+    "text-image/definition_judgement_real_cases_open_verified_v1/",
+    "text-image/logic_analysis_real_cases_open_verified_v1/"
+  ],
+  "status": "passed"
+}

@@ -1,0 +1,54 @@
+{
+  "baseline": {
+    "head": "ba6549a",
+    "commit_message": "add judgement reasoning method scaffolds"
+  },
+  "test_results": {
+    "judgement_scaffold_tests": "48 passed",
+    "graphic_scaffold_tests": "23 passed",
+    "full_pytest": "286 passed"
+  },
+  "judgement_reasoning_scaffolds_status": {
+    "definition_judgement_scaffold": "complete",
+    "analogy_reasoning_scaffold": "complete",
+    "logic_analysis_scaffold": "complete",
+    "output_audit": "passed",
+    "cli_integration": false,
+    "mcp_integration": false,
+    "solver_integration": false
+  },
+  "architecture": {
+    "solver_track": [
+      "solve_data_analysis",
+      "solve_logic_reasoning.translation",
+      "solve_logic_reasoning.argument_reasoning",
+      "solve_logic_reasoning.truth_reasoning_guarded",
+      "solve_logic_reasoning.logic_analysis_guarded"
+    ],
+    "scaffold_track": [
+      "graphic_reasoning_scaffold",
+      "definition_judgement_scaffold",
+      "analogy_reasoning_scaffold",
+      "logic_analysis_scaffold"
+    ]
+  },
+  "protected_files": {
+    "data_analysis_py": "unchanged",
+    "logic_reasoning_py": "unchanged",
+    "definition_judgement_py": "unchanged",
+    "analogy_reasoning_py": "unchanged",
+    "logic_analysis_reasoning_py": "unchanged",
+    "all_cards_jsonl": "unchanged",
+    "cli_py": "unchanged",
+    "mcp_server_py": "unchanged",
+    "graphic_reasoning_scaffold_py": "unchanged"
+  },
+  "forbidden_dependencies_added": false,
+  "untracked_local_test_dirs": [
+    "text-image/analogy_reasoning_real_cases_open_verified_v1/",
+    "text-image/analogy_reasoning_strong_relations_open_verified_v2/",
+    "text-image/definition_judgement_real_cases_open_verified_v1/",
+    "text-image/logic_analysis_real_cases_open_verified_v1/"
+  ],
+  "status": "passed"
+}

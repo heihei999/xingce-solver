@@ -1,0 +1,27 @@
+{
+  "package": "analogy_reasoning_strong_relations_open_verified_v2",
+  "check_time": "2026-06-15",
+  "valid_json": true,
+  "total_cases": 12,
+  "all_have_case_id": true,
+  "all_have_question_text": true,
+  "all_have_options": true,
+  "answer_key_exists": true,
+  "sources_exists": true,
+  "audit_notes_exists": true,
+  "need_review_count": 0,
+  "can_proceed_to_audit": true,
+  "relation_coverage": [
+    "tool-profession-object (three-word)",
+    "attribute-modifier (two-word)",
+    "action-pair-compound (three-word)",
+    "necessary-attribute (two-word)",
+    "problem-treatment (three-word)",
+    "state-progression (three-word)",
+    "event-action-effect (three-word)",
+    "avoidance-purpose (three-word)",
+    "passive-object-place (three-word)",
+    "species-genus (two-word)",
+    "tool-function (two-word)"
+  ]
+}

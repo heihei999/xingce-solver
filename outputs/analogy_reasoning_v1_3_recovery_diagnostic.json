@@ -1,0 +1,34 @@
+{
+  "version": "v1_3",
+  "analysis_time": "2026-06-15",
+  "v1_0_summary": {"total": 12, "correct": 2, "wrong": 2, "null": 8},
+  "v1_1_summary": {"total": 12, "correct": 0, "wrong": 0, "null": 12},
+  "v1_0_correct_cases": [
+    {"case_id": "analog_001_2023_gk_xz_091", "stem_relation": ["material_product", "naming_convention"], "predicted": "A", "expected": "A"},
+    {"case_id": "analog_003_2023_gk_xz_093", "stem_relation": ["material_product"], "predicted": "A", "expected": "A"}
+  ],
+  "v1_0_wrong_cases": [
+    {"case_id": "analog_006_2023_gk_xz_096", "stem_relation": ["sequence"], "predicted": "C", "expected": "D", "cause": "sequence alone too weak for three-word stem"},
+    {"case_id": "analog_011_2023_gk_ds_093", "stem_relation": ["sequence", "purpose", "degree"], "predicted": "B", "expected": "A", "cause": "mixed relations, purpose detection unreliable for four-char phrases"}
+  ],
+  "v1_1_why_all_retracted": "v1.1 added has_mixed_relations and has_only_weak filters; sequence/degree/grammar_structure classified as weak; this blocked all predictions including the correct material_product cases",
+  "safe_recovery_candidates": [
+    {"case_id": "analog_001", "relation": "material_product", "reason": "single high-confidence relation, no ambiguity"},
+    {"case_id": "analog_003", "relation": "material_product", "reason": "single high-confidence relation, no ambiguity"}
+  ],
+  "must_stay_conservative": [
+    {"case_id": "analog_002", "reason": "multiple relations (aggregation, degree, grammar_structure)"},
+    {"case_id": "analog_004", "reason": "unknown relation"},
+    {"case_id": "analog_005", "reason": "grammar_structure only, three-word cross pattern"},
+    {"case_id": "analog_006", "reason": "sequence only, three-word stem, wrong in v1.0"},
+    {"case_id": "analog_007", "reason": "degree only, three-word stem"},
+    {"case_id": "analog_008", "reason": "degree + grammar_structure mixed"},
+    {"case_id": "analog_009", "reason": "unknown relation, fill-in-blank"},
+    {"case_id": "analog_010", "reason": "unknown relation, fill-in-blank"},
+    {"case_id": "analog_011", "reason": "mixed relations (sequence, purpose, degree), wrong in v1.0"},
+    {"case_id": "analog_012", "reason": "unknown relation"}
+  ],
+  "recovery_strategy": "Only predict when stem has exactly ONE non-weak relation type AND only one option matches that type with high score gap. material_product is the only safe relation for this pack.",
+  "risk_relation_types": ["sequence", "degree", "grammar_structure", "unknown", "purpose"],
+  "safe_relation_types": ["material_product", "naming_convention"]
+}

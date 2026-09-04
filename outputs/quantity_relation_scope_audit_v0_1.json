@@ -1,0 +1,88 @@
+{
+  "baseline": {
+    "head": "3ba360e",
+    "tag": "stable-mcp-guidance-tools-3ba360e"
+  },
+  "scope": {
+    "solver_added": false,
+    "scaffold_added": false,
+    "mcp_integration": false,
+    "cli_integration": false,
+    "knowledge_base_modified": false,
+    "real_case_package_created": false,
+    "web_search_used": false,
+    "ocr_used": false,
+    "fabricated_questions": false
+  },
+  "inventory": {
+    "quantity_relation_card_count": 65,
+    "categories_found_count": 22,
+    "method_cards_found_count": 65,
+    "source_files_checked": [
+      "knowledge_base/all_cards.jsonl",
+      "knowledge_base/module_originals/quantity_relation/"
+    ],
+    "field_availability": "all 65 cards have complete fields"
+  },
+  "feasibility_grades": {
+    "A_solver_first": [
+      "工程问题",
+      "经济利润问题",
+      "鸡兔同笼",
+      "盈亏问题",
+      "日期星期问题",
+      "余数问题（特征）",
+      "植树问题",
+      "浓度/溶液混合问题",
+      "比赛问题",
+      "方阵问题",
+      "数列问题",
+      "牛吃草"
+    ],
+    "B_scaffold_first_solver_later": [
+      "行程问题（基础）",
+      "容斥问题",
+      "数论与计算",
+      "不定方程"
+    ],
+    "C_scaffold_only": [
+      "排列组合",
+      "概率问题",
+      "最值问题",
+      "统筹优化",
+      "几何问题（最值/构造）",
+      "年龄问题"
+    ],
+    "D_defer": [
+      "抽屉原理"
+    ]
+  },
+  "recommended_first_solver_targets": [
+    "工程问题",
+    "经济利润问题",
+    "鸡兔同笼",
+    "余数问题（特征余数）",
+    "浓度/溶液混合问题"
+  ],
+  "recommended_next_step": "scaffold_first",
+  "future_real_case_audit_policy": {
+    "user_provided_sources_required": true,
+    "no_fabricated_questions": true,
+    "no_web_search_by_claude_or_codex": true,
+    "answer_key_must_be_verified": true,
+    "keep_test_package_untracked_by_default": true,
+    "wrong_zero_first": true
+  },
+  "guardrails": [
+    "wrong=0 first",
+    "analysis_only when not unique",
+    "no default option",
+    "no case_id rule",
+    "no answer leakage",
+    "no CLI/MCP before isolated audit",
+    "no self-made real cases",
+    "no fabricated answer key",
+    "no web-sourced questions by Claude/Codex"
+  ],
+  "status": "scope_audit_completed"
+}

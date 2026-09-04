@@ -1,0 +1,73 @@
+{
+  "baseline": {
+    "head": "e84f42f",
+    "commit_message": "add verbal reasoning method scaffold"
+  },
+  "test_results": {
+    "verbal_scaffold_tests": "23 passed",
+    "mcp_guidance_tests": "34 passed",
+    "quantity_scaffold_tests": "22 passed",
+    "graphic_scaffold_tests": "23 passed",
+    "judgement_scaffold_tests": "48 passed",
+    "full_pytest": "365 passed"
+  },
+  "verbal_reasoning_scaffold_status": {
+    "status": "complete",
+    "output_audit": "passed",
+    "mode": "method_scaffold_only",
+    "solver_integration": false,
+    "mcp_integration": false,
+    "cli_integration": false,
+    "real_case_package_created": false
+  },
+  "architecture": {
+    "solver_track": [
+      "solve_data_analysis",
+      "solve_logic_reasoning.translation",
+      "solve_logic_reasoning.argument_reasoning",
+      "solve_logic_reasoning.truth_reasoning_guarded",
+      "solve_logic_reasoning.logic_analysis_guarded"
+    ],
+    "scaffold_track": [
+      "graphic_reasoning_scaffold",
+      "definition_judgement_scaffold",
+      "analogy_reasoning_scaffold",
+      "logic_analysis_scaffold",
+      "quantity_relation_scaffold",
+      "verbal_reasoning_scaffold"
+    ],
+    "mcp_guidance_preview_track": [
+      "get_graphic_reasoning_scaffold",
+      "get_definition_judgement_scaffold",
+      "get_analogy_reasoning_scaffold",
+      "get_logic_analysis_scaffold",
+      "get_quantity_relation_scaffold"
+    ],
+    "not_yet_integrated": [
+      "get_verbal_reasoning_scaffold"
+    ]
+  },
+  "protected_files": {
+    "mcp_server_py": "unchanged",
+    "cli_py": "unchanged",
+    "data_analysis_py": "unchanged",
+    "logic_reasoning_py": "unchanged",
+    "graphic_reasoning_scaffold_py": "unchanged",
+    "definition_judgement_scaffold_py": "unchanged",
+    "analogy_reasoning_scaffold_py": "unchanged",
+    "logic_analysis_scaffold_py": "unchanged",
+    "quantity_relation_scaffold_py": "unchanged",
+    "all_cards_jsonl": "unchanged"
+  },
+  "forbidden_dependencies_added": false,
+  "external_llm_api_used": false,
+  "network_used": false,
+  "fabricated_questions": false,
+  "untracked_local_test_dirs": [
+    "text-image/analogy_reasoning_real_cases_open_verified_v1/",
+    "text-image/analogy_reasoning_strong_relations_open_verified_v2/",
+    "text-image/definition_judgement_real_cases_open_verified_v1/",
+    "text-image/logic_analysis_real_cases_open_verified_v1/"
+  ],
+  "status": "passed"
+}

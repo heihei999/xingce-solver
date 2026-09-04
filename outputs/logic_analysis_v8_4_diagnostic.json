@@ -1,0 +1,14 @@
+[
+  {"case_id": "LANALYSIS-REAL-001", "expected": "D", "status": "ambiguous", "option_status": "ambiguous_options", "predicted": null, "failure_stage": "option_mapping", "reason": "Two 'possible' options (A, B) — comparison constraints not enforced enough"},
+  {"case_id": "LANALYSIS-REAL-002", "expected": "C", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "constraint_parse", "reason": "Adjacency constraints not filtering 5040 assignments"},
+  {"case_id": "LANALYSIS-REAL-003", "expected": "D", "status": "analysis_only", "option_status": "not_attempted", "predicted": null, "failure_stage": "entity_domain_extract", "reason": "9 variables (noise); domain extraction fails"},
+  {"case_id": "LANALYSIS-REAL-004", "expected": "C", "status": "solved", "option_status": "unique_supported", "predicted": "C", "failure_stage": "none", "reason": "Half-true-half-false correctly solved"},
+  {"case_id": "LANALYSIS-REAL-005", "expected": "C", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "constraint_parse", "reason": "Variables are speakers not boxes; constraint noise"},
+  {"case_id": "LANALYSIS-REAL-006", "expected": "D", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "constraint_parse", "reason": "Half-true constraints not specific enough"},
+  {"case_id": "LANALYSIS-REAL-007", "expected": "C", "status": "inconsistent", "option_status": "not_attempted", "predicted": null, "failure_stage": "constraint_parse", "reason": "Variables are noise; '不=龙井' noise constraints (partially fixed)"},
+  {"case_id": "LANALYSIS-REAL-008", "expected": "B", "status": "analysis_only", "option_status": "not_attempted", "predicted": null, "failure_stage": "entity_domain_extract", "reason": "No variables extracted"},
+  {"case_id": "LANALYSIS-REAL-009", "expected": "D", "status": "analysis_only", "option_status": "not_attempted", "predicted": null, "failure_stage": "entity_domain_extract", "reason": "No domain extracted"},
+  {"case_id": "LANALYSIS-REAL-010", "expected": "A", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "option_mapping", "reason": "All options 'impossible' — comparison constraints not enforced"},
+  {"case_id": "LANALYSIS-REAL-011", "expected": "B", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "constraint_parse", "reason": "360 assignments; truth-mixed constraints not implemented"},
+  {"case_id": "LANALYSIS-REAL-012", "expected": "D", "status": "ambiguous", "option_status": "no_supported_option", "predicted": null, "failure_stage": "constraint_parse", "reason": "729 assignments; comparison constraints not enforced"}
+]

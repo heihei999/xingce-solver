@@ -1,0 +1,14 @@
+[
+  {"case_id": "001", "expected": "D", "status": "ambiguous", "failure_stage": "constraint_parse", "reason": "Comparison '教师比乙年龄大' requires age ranking, but assignment only has professions. Two assignments remain."},
+  {"case_id": "002", "expected": "C", "status": "ambiguous", "failure_stage": "assignment_search", "reason": "5040 permutations, adjacency constraints not enforced during filtering."},
+  {"case_id": "003", "expected": "D", "status": "analysis_only", "failure_stage": "entity_domain_extract", "reason": "9 variables (noise), search_space_too_large."},
+  {"case_id": "004", "expected": "C", "status": "solved", "failure_stage": "none", "reason": "Correctly solved."},
+  {"case_id": "005", "expected": "C", "status": "solved", "failure_stage": "none", "reason": "Correctly solved."},
+  {"case_id": "006", "expected": "D", "status": "ambiguous", "failure_stage": "entity_domain_extract", "reason": "Only 1 variable, 0 constraints. Box/color variables not extracted."},
+  {"case_id": "007", "expected": "C", "status": "ambiguous", "failure_stage": "constraint_parse", "reason": "5 variables, 1 constraint. Half-true constraints not fully parsed."},
+  {"case_id": "008", "expected": "B", "status": "analysis_only", "failure_stage": "entity_domain_extract", "reason": "0 variables extracted. Vehicle types not recognized."},
+  {"case_id": "009", "expected": "D", "status": "analysis_only", "failure_stage": "entity_domain_extract", "reason": "4 variables but 0 constraints. Skills domain not extracted."},
+  {"case_id": "010", "expected": "A", "status": "ambiguous", "failure_stage": "constraint_parse", "reason": "Domain has noise. Comparison constraints reference '研究音韵学的' not a person name."},
+  {"case_id": "011", "expected": "B", "status": "ambiguous", "failure_stage": "constraint_parse", "reason": "360 assignments. Truth-mixed constraints not fully enforced."},
+  {"case_id": "012", "expected": "D", "status": "ambiguous", "failure_stage": "constraint_parse", "reason": "720 assignments. Comparison constraints not enforced."}
+]

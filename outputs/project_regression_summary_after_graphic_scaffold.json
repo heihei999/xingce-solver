@@ -1,0 +1,33 @@
+{
+  "baseline": {
+    "head": "92e8319",
+    "commit_message": "audit graphic reasoning scaffold output"
+  },
+  "test_results": {
+    "graphic_scaffold_tests": "23 passed",
+    "full_pytest": "238 passed"
+  },
+  "graphic_reasoning_status": {
+    "visual_checklist": "complete",
+    "isolated_scaffold": "complete",
+    "output_audit": "passed",
+    "cli_integration": false,
+    "mcp_integration": false,
+    "solver_integration": false
+  },
+  "protected_files": {
+    "data_analysis_py": "unchanged",
+    "logic_reasoning_py": "unchanged",
+    "all_cards_jsonl": "unchanged",
+    "cli_py": "unchanged",
+    "mcp_server_py": "unchanged"
+  },
+  "forbidden_dependencies_added": false,
+  "untracked_local_test_dirs": [
+    "text-image/analogy_reasoning_real_cases_open_verified_v1/",
+    "text-image/analogy_reasoning_strong_relations_open_verified_v2/",
+    "text-image/definition_judgement_real_cases_open_verified_v1/",
+    "text-image/logic_analysis_real_cases_open_verified_v1/"
+  ],
+  "status": "passed"
+}

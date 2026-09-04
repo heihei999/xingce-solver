@@ -305,7 +305,7 @@ class TestRouteXingceQuestion:
         result = tool_route_xingce_question("以下哪项最能削弱上述论证")
         assert result["module_guess"] == "logic_reasoning"
         assert result["recommended_track"] == "solver_candidate"
-        assert result["recommended_tool"] is None
+        assert result["recommended_tool"] == "solve_logic_reasoning"
 
     def test_logic_analysis_route(self):
         result = tool_route_xingce_question("甲乙丙三人排序 甲在乙前面")
@@ -326,7 +326,7 @@ class TestRouteXingceQuestion:
         result = tool_route_xingce_question("根据资料 同比增长率是多少")
         assert result["module_guess"] == "data_analysis"
         assert result["recommended_track"] == "solver_candidate"
-        assert result["recommended_tool"] is None
+        assert result["recommended_tool"] == "solve_data_analysis"
 
     def test_unknown_route(self):
         result = tool_route_xingce_question("abc123 random text")

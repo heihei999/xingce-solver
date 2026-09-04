@@ -396,7 +396,7 @@ def build_quantity_relation_scaffold() -> dict[str, Any]:
             },
             "十字交叉法": {
                 "scenarios": ["浓度混合", "平均数混合", "比例混合"],
-                "steps": ["画十字交叉", "计算比例", "求解"],
+                "steps": ["鼓励使用字符画(Ascii Art)形式画出十字交叉图示，直观展示左侧数值、中间交点与右侧差值", "计算比例", "求解"],
                 "verification": ["检查比例计算"],
                 "risk": ["混合类型判断错误"],
                 "analysis_only_when": ["混合类型不明确"],
@@ -410,7 +410,7 @@ def build_quantity_relation_scaffold() -> dict[str, Any]:
             },
             "图表辅助": {
                 "scenarios": ["容斥问题画韦恩图", "行程问题画线段图"],
-                "steps": ["画图辅助理解", "标注已知量", "推导未知量"],
+                "steps": ["鼓励使用字符画(Ascii Art)直观画出韦恩图、线段图或表格", "标注已知量", "推导未知量"],
                 "verification": ["检查图与题干是否一致"],
                 "risk": ["图画错导致推导错误"],
                 "analysis_only_when": ["无法可靠画图"],
@@ -479,7 +479,9 @@ def build_quantity_relation_scaffold() -> dict[str, Any]:
             "【唯一性判断】\n"
             "确认只有一个选项满足所有条件。若不唯一，标注 analysis_only。\n\n"
             "【不确定性说明】\n"
-            "列出任何导致不确定的因素，标注 analysis_only。"
+            "列出任何导致不确定的因素，标注 analysis_only。\n\n"
+            "【自由追问豁免权】\n"
+            "以上格式（【题型识别】至【不确定性说明】）仅适用于第一次完整的答题。如果在你给出了初次完整解答后，用户对某个具体的解法、公式或逻辑提出疑问并要求详细讲解，你**不必**再受限于上述模板格式。请像真正的人类老师一样自然地表达你的思考过程，怎么直观怎么讲，鼓励在合适的时候使用字符画（Ascii Art）辅助解释（例如画出十字交叉图、韦恩图等），但不需要生搬硬套。"
         ),
         "uncertainty_policy": {
             "triggers": [
@@ -493,7 +495,12 @@ def build_quantity_relation_scaffold() -> dict[str, Any]:
                 "涉及复杂排列组合/概率/几何构造且无法可靠建模 → analysis_only",
             ],
         },
+                "formatting_guidelines": [
+            "允许自然使用 Emoji，但绝对不得滥用导致满篇都是表情包。",
+            "强烈鼓励在进行多项对比、不同方法分析时，使用 Markdown 对比表格，直观清晰！"
+        ],
         "must_not_do": [
+        "绝对不得在回复用户的追问、反驳或要求详细讲解时，使用【题型识别】等脚手架八股文模板。追问时必须直接使用自然语言对话，并可自由画字符图（Ascii Art）辅助解释！",
             "不得看见数字就硬套公式。",
             "不得忽略单位。",
             "不得忽略问法。",

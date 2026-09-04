@@ -1,4 +1,4 @@
-"""Graphic reasoning method scaffold for multi-modal LLM guidance.
+﻿"""Graphic reasoning method scaffold for multi-modal LLM guidance.
 
 This module constructs observation scaffolds for 图形推理 (graphic reasoning)
 questions. It is NOT a solver. It does NOT recognize images. It does NOT
@@ -36,6 +36,10 @@ def build_graphic_reasoning_scaffold() -> dict[str, Any]:
         "visual_checklists": get_graphic_reasoning_visual_checklists(),
         "response_template": render_graphic_reasoning_prompt_template(),
         "uncertainty_policy": _build_uncertainty_policy(),
+                "formatting_guidelines": [
+            "允许自然使用 Emoji，但绝对不得滥用导致满篇都是表情包。",
+            "强烈鼓励在进行多项对比、不同方法分析时，使用 Markdown 对比表格，直观清晰！"
+        ],
         "must_not_do": _build_must_not_do(),
         "specialized_templates": get_specialized_templates(),
         "visual_transcription_protocol": get_visual_transcription_protocol(),

@@ -1,0 +1,74 @@
+{
+  "baseline": {
+    "head": "02cfe35",
+    "tag": "stable-verbal-reasoning-mcp-guidance-02cfe35",
+    "commit_message": "document project status after verbal reasoning MCP guidance"
+  },
+  "test_results": {
+    "mcp_guidance_tests": "40 passed",
+    "verbal_scaffold_tests": "23 passed",
+    "quantity_scaffold_tests": "22 passed",
+    "graphic_scaffold_tests": "23 passed",
+    "judgement_scaffold_tests": "48 passed",
+    "full_pytest": "371 passed"
+  },
+  "solver_track": {
+    "data_analysis": "stable_frozen",
+    "logic_translation": "stable",
+    "logic_argument_reasoning": "stable",
+    "logic_truth_reasoning": "guarded",
+    "logic_analysis_reasoning": "guarded"
+  },
+  "scaffold_track": {
+    "graphic_reasoning_scaffold": "complete",
+    "definition_judgement_scaffold": "complete",
+    "analogy_reasoning_scaffold": "complete",
+    "logic_analysis_scaffold": "complete",
+    "quantity_relation_scaffold": "complete",
+    "verbal_reasoning_scaffold": "complete"
+  },
+  "mcp_guidance_preview_track": {
+    "get_graphic_reasoning_scaffold": "complete",
+    "get_definition_judgement_scaffold": "complete",
+    "get_analogy_reasoning_scaffold": "complete",
+    "get_logic_analysis_scaffold": "complete",
+    "get_quantity_relation_scaffold": "complete",
+    "get_verbal_reasoning_scaffold": "complete"
+  },
+  "knowledge_base": {
+    "all_cards_jsonl_modified": false,
+    "total_cards": 292,
+    "module_count": 9,
+    "module_distribution": {
+      "数量关系": 65,
+      "判断推理-逻辑判断": 42,
+      "判断推理-图形推理": 39,
+      "资料分析": 33,
+      "言语理解-主旨意图": 32,
+      "言语理解-语句表达": 25,
+      "判断推理-类比推理": 23,
+      "言语理解-逻辑填空": 20,
+      "判断推理-定义判断": 13
+    }
+  },
+  "scope": {
+    "code_modified": false,
+    "solver_added": false,
+    "scaffold_added": false,
+    "mcp_tool_added": false,
+    "cli_integration": false,
+    "knowledge_base_modified": false,
+    "real_case_package_created": false,
+    "fabricated_questions": false,
+    "web_search_used": false,
+    "ocr_used": false,
+    "external_llm_api_used": false
+  },
+  "untracked_local_test_dirs": [
+    "text-image/analogy_reasoning_real_cases_open_verified_v1/",
+    "text-image/analogy_reasoning_strong_relations_open_verified_v2/",
+    "text-image/definition_judgement_real_cases_open_verified_v1/",
+    "text-image/logic_analysis_real_cases_open_verified_v1/"
+  ],
+  "status": "final_status_audit_completed"
+}

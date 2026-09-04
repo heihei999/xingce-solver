@@ -1,0 +1,21 @@
+{
+  "version": "v1_4",
+  "target_case": "analog_002_2023_gk_xz_092",
+  "stem": "小计∶总计",
+  "expected_answer": "D",
+  "stem_relations": [
+    {"type": "aggregation", "confidence": 0.70},
+    {"type": "degree", "confidence": 0.60},
+    {"type": "grammar_structure", "confidence": 0.40}
+  ],
+  "option_analysis": {
+    "A_被乘数_总数": {"aggregation": 0.70, "score": 1.050},
+    "B_分目录_总目": {"aggregation": 0.70, "score": 1.050},
+    "C_平均值_总值": {"aggregation": 0.70, "score": 1.050},
+    "D_单科分_总分": {"aggregation": 0.70, "score": 1.050}
+  },
+  "diagnosis": "All 4 options have identical aggregation detection (same confidence, same score). The solver cannot distinguish between them using generic aggregation rules. The specific relation 'parts that sum to a total' vs 'parts that don't sum' requires domain knowledge not expressible in generic rules.",
+  "can_safely_recover": false,
+  "reason": "Would require specific word-level rules (e.g., '小计' specifically sums to '总计'), which violates the no-specific-test-words constraint.",
+  "recommendation": "Keep as ambiguous. analog_002 cannot be solved without domain-specific aggregation sub-type detection."
+}

@@ -1,0 +1,22 @@
+{
+  "version": "v1_1",
+  "total": 12,
+  "solved": 0,
+  "ambiguous": 6,
+  "analysis_only": 6,
+  "inconsistent": 0,
+  "correct": 0,
+  "wrong": 0,
+  "null": 12,
+  "guardrail_status": "PASS",
+  "specific_test_words_in_solver": false,
+  "ml_dependencies": false,
+  "logic_reasoning_py_modified": false,
+  "data_analysis_py_modified": false,
+  "all_cards_jsonl_modified": false,
+  "v1_0_wrong_count": 2,
+  "v1_1_wrong_count": 0,
+  "v1_0_to_v1_1_change": "Removed specific test entity words, raised threshold for three-word stems, filtered weak-only relation types",
+  "correct_drop_reason": "Conservative tightening to guarantee wrong=0; correct sacrificed for safety",
+  "recommendation": "Continue refinement to increase solved count without introducing wrong predictions"
+}

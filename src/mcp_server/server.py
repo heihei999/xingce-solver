@@ -178,6 +178,11 @@ async def api_execute_tool(request: Request):
     return {"error": "tool not found"}
 
 
-if __name__ == "__main__":
+def main():
     import uvicorn
+    # Important: Use string reference "mcp_server.server:app" to support hot reload properly if needed,
+    # or just use app directly.
     uvicorn.run(app, host=Config.HOST, port=Config.PORT)
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,28 @@
+{
+  "package": "analogy_reasoning_real_cases_open_verified_v1",
+  "check_time": "2026-06-15",
+  "valid_json": true,
+  "total_cases": 12,
+  "all_have_case_id": true,
+  "all_have_question_text": true,
+  "all_have_options": true,
+  "answer_key_exists": true,
+  "sources_exists": true,
+  "audit_notes_exists": true,
+  "need_review_count": 0,
+  "can_proceed_to_audit": true,
+  "case_summary": [
+    {"case_id": "analog_001_2023_gk_xz_091", "answer": "A", "relation_focus": ["交叉关系", "命名方式", "材料命名", "功能命名"], "stem_type": "二词型"},
+    {"case_id": "analog_002_2023_gk_xz_092", "answer": "D", "relation_focus": ["计算对应", "汇总关系"], "stem_type": "二词型"},
+    {"case_id": "analog_003_2023_gk_xz_093", "answer": "A", "relation_focus": ["材料关系", "原材料-成品"], "stem_type": "二词型"},
+    {"case_id": "analog_004_2023_gk_xz_094", "answer": "C", "relation_focus": ["反对关系", "命名方式", "植物命名"], "stem_type": "二词型"},
+    {"case_id": "analog_005_2023_gk_xz_095", "answer": "D", "relation_focus": ["三词关系", "交叉关系"], "stem_type": "三词型"},
+    {"case_id": "analog_006_2023_gk_xz_096", "answer": "D", "relation_focus": ["因果关系", "原因-症状"], "stem_type": "三词型"},
+    {"case_id": "analog_007_2023_gk_xz_097", "answer": "B", "relation_focus": ["顺承关系", "流程顺序"], "stem_type": "三词型"},
+    {"case_id": "analog_008_2023_gk_xz_098", "answer": "D", "relation_focus": ["反对关系", "程度递增"], "stem_type": "三词型"},
+    {"case_id": "analog_009_2023_gk_xz_099", "answer": "C", "relation_focus": ["填空型类比", "种属关系"], "stem_type": "填空型"},
+    {"case_id": "analog_010_2023_gk_xz_100", "answer": "B", "relation_focus": ["填空型类比", "功能关系", "工作职责"], "stem_type": "填空型"},
+    {"case_id": "analog_011_2023_gk_ds_093", "answer": "A", "relation_focus": ["目的对应", "古语类比"], "stem_type": "二词型"},
+    {"case_id": "analog_012_2023_gk_ds_094", "answer": "C", "relation_focus": ["因果关系", "方向一致"], "stem_type": "二词型"}
+  ]
+}
